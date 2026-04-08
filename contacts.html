@@ -53,6 +53,29 @@
                     <legend>Message Details</legend>
 
                     <p>
+                        <label for="subject">Subject:</label><br>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Please choose an option --</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </p>
+
+                    <p>Inquiry Type:</p>
+                    <p>
+                        <label>
+                            <input type="radio" name="type" value="question" required> Question
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="suggestion"> Suggestion
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="complaint"> Complaint
+                        </label>
+                    </p>
+
+                    <p>
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
                     </p>
