@@ -39,13 +39,22 @@
                     <legend>Personal Information</legend>
 
                     <p>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <label for="name">Name or nickname:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your name or nickname" required>
                     </p>
 
                     <p>
                         <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email" placeholder="email@example.com" required>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
                     </p>
                 </fieldset>
 
