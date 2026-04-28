@@ -65,7 +65,7 @@ header {
 
 header p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 19.2px;
     font-weight: 700;
     color: var(--text-main);
 }
@@ -80,7 +80,7 @@ nav ul {
 }
 
 nav ul li a {
-    font-size: 0.95rem;
+    font-size: 16px;
     font-weight: 500;
     color: var(--text-muted);
 }
@@ -105,7 +105,7 @@ section {
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 16px;
 }
 
@@ -138,19 +138,19 @@ section.hero-section {
 
 .greeting {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 16px;
     margin-bottom: 8px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 1.15;
     margin-bottom: 24px;
     color: var(--secondary-bg);
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 16px;
     margin-bottom: 32px;
 }
 
@@ -208,4 +208,105 @@ a.btn-outline:hover {
 
 a.btn:active {
     transform: scale(0.98);
+}
+
+/* Кнопки у формах */
+button,
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ===== Зображення та цитати ===== */
+figure {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    background-color: var(--white);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+aside blockquote {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin: 40px 0;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--text-main);
+}
+
+/* ===== Таблиця ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+th, td {
+    padding: 16px 24px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #fcfcfd;
+}
+
+/* ===== Футер ===== */
+footer {
+    background-color: var(--secondary-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--white);
 }
