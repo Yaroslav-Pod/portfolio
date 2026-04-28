@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Yaroslav Podolyanchyk's portfolio homepage">
     <meta name="author" content="Yaroslav Podolyanchyk">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home | Portfolio</title>
 </head>
 <body>
@@ -20,16 +21,22 @@
     </header>
 
     <main>
-        <section>
-            <h1>Hello, I'm Yaroslav Podolyanchyk</h1>
-            <p>I am a student in the Department of Computer Engineering <strong> at KHAI </strong>. I am currently learning the basics of web markup.</p>
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="greeting">Hi there, my name is</p>
+                <h1>Yaroslav Podolyanchyk</h1>
+                <p>I am a student in the Department of Computer Engineering <strong>at KHAI</strong>. I am currently learning the basics of web markup.</p>
+                <div class="btn-group">
+                    <a href="contacts.html" class="btn">Say Hello!</a>
+                    <a href="about.html" class="btn btn-outline">Portfolio</a>
+                </div>
+            </div>
 
-            <figure>
-                <img src="images/photo.png" alt="Photo by Yaroslav Podolyanchyk" width="400">
-                <figcaption>Profile picture</figcaption>
-            </figure>
-
-            <p><a href="contacts.html">Say Hello!</a></p>
+            <div class="hero-image">
+                <figure class="hero-figure">
+                    <img src="images/photo.png" alt="Photo by Yaroslav Podolyanchyk" width="400">
+                </figure>
+            </div>
         </section>
 
         <section>
@@ -40,15 +47,12 @@
             </ul>
         </section>
 
-        <hr>
-
         <section>
             <article>
                 <h2>I'm currently studying user interface design</h2>
                 <p>This project is part of Laboratory Works. The main aim is to learn the basics of Design.</p>
                 <p>I use <em>Git</em> to track changes and form the history of commits.</p>
-
-                <p>
+                <p class="btn-group-small">
                     <a href="about.html">About me</a>
                     <a href="contacts.html">Contact me</a>
                 </p>
@@ -87,7 +91,7 @@
 
     <footer>
         <p>&copy; 2026 Yaroslav Podolyanchik. All rights reserved.</p>
-        <p>Contact: <a href="y.o.podolianchyk@student.csn.khai.edu">y.o.podolianchyk@student.csn.khai.edu</a></p>
+        <p>Contact: <a href="mailto:y.o.podolianchyk@student.csn.khai.edu">y.o.podolianchyk@student.csn.khai.edu</a></p>
     </footer>
 </body>
 </html>
