@@ -294,6 +294,39 @@ tr:hover td {
     background-color: #fcfcfd;
 }
 
+/* ===== Списки описів ===== */
+dl {
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+dt {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 16px;
+    color: var(--text-muted);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+dd:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 /* ===== Футер ===== */
 footer {
     background-color: var(--secondary-bg);
