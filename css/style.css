@@ -88,3 +88,124 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--text-main);
 }
+
+/* ===== Головна секція та картки ===== */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--text-muted);
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== ГОЛОВНА СЕКЦІЯ (HERO) ===== */
+section.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 20px 0 60px 0;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.greeting {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--secondary-bg);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-figure {
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* ===== Кнопки  ===== */
+.btn-group {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-group-small {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+a.btn:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+a.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+a.btn-outline:hover {
+    background-color: rgba(0, 168, 150, 0.05);
+}
+
+a.btn:active {
+    transform: scale(0.98);
+}
